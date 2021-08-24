@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #60a5fa;
+}
+html {
+  background-color: #d1d5db;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: larger;
+  margin: 2rem 0px;
+  font-weight: 600;
+}
+input {
+  font-size: large;
+  display: block;
+  padding: 0.6rem 1rem;
+  margin: 1rem auto;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 325px;
+}
+
+button {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+#output {
+  font-size: x-large;
+  font-weight: 600;
+  margin: 2rem 0;
+}
