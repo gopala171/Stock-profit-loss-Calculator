@@ -22,15 +22,17 @@ export default function App() {
       var profit = currentPrice - initialPrice;
       var totalProfit = profit * stockQty;
       var profitPercent = (profit / initialPrice) * 100;
+      profitPercent = Number.parseFloat(profitPercent).toFixed(2);
       setOutput(
-        `Hurray, the profit is ${totalProfit} and the profit percent is ${profitPercent} 🤑`
+        `Hurray, the profit is ${totalProfit} and the profit percent is ${profitPercent}% 🤑`
       );
     } else if (initialPrice > currentPrice) {
       var loss = initialPrice - currentPrice;
       var totalLoss = loss * stockQty;
       var lossPercent = (loss / initialPrice) * 100;
+      lossPercent = Number.parseFloat(lossPercent).toFixed(2);
       setOutput(
-        `Oops, the Loss is ${totalLoss} and the loss percent is ${lossPercent} 🙁`
+        `Oops, the Loss is ${totalLoss} and the loss percent is ${lossPercent}% 🙁`
       );
     } else {
       setOutput(`No pain no gain, no gain no pain 😉`);
